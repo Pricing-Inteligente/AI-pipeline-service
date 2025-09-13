@@ -1,0 +1,6 @@
+bodies_scraping.bodies.csv
+tests_md/
+tests_md_csv/
+Paginas_prueba/
+.venv/
+__pycache__/
