@@ -5,11 +5,20 @@ import os, time, traceback
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, Optional
-
+from dotenv import load_dotenv 
 from pymongo import MongoClient
 from bson import ObjectId
 
 import torch
+
+# Carga las variables desde el archivo .env
+load_dotenv()
+
+MONGO_URI = os.getenv("MONGO_URI")
+MONGO_DB = os.getenv("MONGO_DB")
+MONGO_COL = os.getenv("")
+BODY_FIELD = os.getenv("BODY_FIELD")
+ID_FIELD = os.getenv("ID_FIELD")
 
 # Reusamos tu pipeline
 from LimpiezaGPU import (

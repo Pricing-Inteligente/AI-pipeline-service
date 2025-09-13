@@ -3,4 +3,6 @@ tests_md/
 tests_md_csv/
 Paginas_prueba/
 .venv/
+venv/
 __pycache__/
+.env
